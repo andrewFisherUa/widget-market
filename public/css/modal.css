@@ -1,0 +1,29 @@
+.modal_hr{
+border: 0;
+border-top: 1px solid #8c8c8c;
+border-top-style: dashed;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+button.modal_exit{
+padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+.modal_exit{
+float: right;
+    font-size: 21px;
+    font-weight: bold;
+    color: #bf5329;
+}
+.modal_exit:focus{
+outline: none;
+}
+.affiliate_modal_header{
+font-size: 16px;
+text-transform: uppercase;
+margin: 8px;
+padding: 0;
+}

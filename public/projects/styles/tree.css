@@ -1,0 +1,62 @@
+.microsearch_input{
+width:95%;
+}
+#teletree{ padding: 20px; clear: both; font-family: Arial, sans-serif; width: 100%; }
+#teletree * { font-size: 100.1%; }
+#teletree  ul{ 
+   overflow: hidden; width: 100%; margin: 0; padding: 0 0 1.5em 0;
+   list-style-type: none;
+}
+#teletree ul ul { overflow: visible; width: auto; margin: 0 0 0 0; padding: 0 0 0 0.75em; }
+    /* класс для ul после которых нет li в родительских ветках */
+#teletree ul.l { border-left: 1px solid; margin-left: -1px; }
+#teletree li.cl ul { display: none; }
+#teletree li { margin: 0; padding: 0; }
+#teletree li li { margin: 0 0 0 0.5em; border-left: 1px dotted; padding: 0; }
+#teletree li div { position: relative; height: 1.5em; min-height: 16px; //height: 1.3em; }
+#teletree li li div { border-bottom: 1px dotted; }
+ {
+        position: absolute; z-index: 1; top: 0.8em; //top: 0.65em; left: 1.75em;
+        width: 100%; margin: 0; border-bottom: 1px dashed; padding: 0;
+    }
+    #teletree a { padding: 0.1em 0.2em; white-space: nowrap; //height: 1px; }
+    #teletree img.i
+    {
+        border-right: 2px solid; border-bottom: 0.5em solid;
+        margin-bottom: -0.5em; vertical-align: middle;
+    }
+    #teletree a.sc
+    {
+        position: absolute; top: 0.06em;
+        margin-left: -1em; padding: 0; text-decoration: none;
+    }
+
+    /* colors */
+    #teletree li p,
+    #teletree img.i,
+    #teletree .sc
+    { background: #f5f5ea; }
+    #teletree ul.l,
+    #teletree li p,
+    #teletree img.i
+    { border-color: #f5f5ea; }
+    #teletree ul li li,
+    #teletree ul li li div
+    { border-color: #999999; }
+    #teletree a,
+    #teletree a.sc,
+    #teletree a.sc:hover
+    { color: #000000; }
+    #teletree a:hover
+    { color: #cc0000; }
+   #teletree .pushopen	 
+	{width: 12px;
+     display: ;
+     height: 10px;
+     float: left;
+     margin-left: 3px;}
+ #teletree  input[type=checkbox]{ 
+   opacity:  1;
+   filter: alpha(opacity=100); /* For IE8 and earlier */
+ } 	 
+	

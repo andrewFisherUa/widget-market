@@ -1,0 +1,118 @@
+<nav class="navbar navbar-default navbar-static-top custom-header">
+            <div class="container">
+                <div class="navbar-header">
+
+                    <!-- Collapsed Hamburger -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Branding Image -->
+					<a href="{{ url('/') }}" class="glav_href">
+						<span class="mp_logo"></span>
+						<span class="mp_slog">выбирай лучшее</span>
+					</a>
+					@if (!Auth::guest())
+						<li class="dropdown" style="width: 173px; list-style-type: none;">
+							<a href="#" class="dropdown-toggle custom-top-us" data-toggle="dropdown" role="button" aria-expanded="false">
+								@if (\Auth::user()->profile->avatar)
+									<img src="/images/avatars/{{\Auth::user()->profile->avatar}}" class="img-circle top_avatar" style="float: left; margin-left: 10px;">
+								@else
+									<img src="/images/cabinet/no_foto.png" class="img-circle top_avatar" style="float: left; margin-left: 10px;">
+								@endif
+								<span style="max-width: 110px; overflow: hidden; white-space: pre; text-overflow: ellipsis; display: inline-block;
+								line-height: 30px; margin-left: 5px;">{{ Auth::user()->name }}</span> <span class="caret" style="margin-top: -25px;"></span>
+							</a>
+							<ul class="dropdown-menu custom-menu" role="menu">
+								<li>
+									<a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+										Logout
+									</a>
+									<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+										{{ csrf_field() }}
+									</form>
+								</li>
+							</ul>
+						</li>
+					@endif
+                </div>
+                <div class="collapse navbar-collapse" id="app-navbar-collapse" style="width: 967px; float: left;">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="nav navbar-nav" style="margin-top: 10px;">
+                        @if (!Auth::guest())
+							@if (Auth::user()->hasRole('admin') or Auth::user()->hasRole('super_manager') or Auth::user()->hasRole('manager'))								
+									@if (Auth::user()->hasRole('admin'))
+										<li>
+											<a href="{{route('managers.all')}}" class="market_place_header">Менеджеры</a>
+										</li>
+									@endif
+								</li>
+								<li>
+									<a href="">Клиенты</a>
+								</li>
+								<li>
+									<a href="">Коммиссии</a>
+								</li>
+								<li>
+									<a href="">Заказы выплат</a>
+								</li>
+								<li>
+									<a href="">Реферы</a>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle market_place_header" data-toggle="dropdown">Новости <b class="caret"></b>
+									@if(count(Auth::user()->unreadNotifications->where('type', "App\Notifications\NewNews")))
+									<span class="market_header_notif">
+									@if (count(Auth::user()->unreadNotifications->where('type', "App\Notifications\NewNews"))<=9)
+										{{count(Auth::user()->unreadNotifications->where('type', "App\Notifications\NewNews"))}}
+										@else 9+ @endif
+									</span>
+									@endif
+									</a>
+									<ul class="dropdown-menu custom-menu">
+										<li><a href="{{route('news.all')}}">Все новости</a></li>
+										<li><a href="{{route('news.add')}}">Добавить новость</a></li>
+									</ul>
+								</li>
+							@endif
+						@endif
+                    </ul>
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="nav navbar-nav custom-nav">
+                        <!-- Authentication Links -->
+                        @if (Auth::guest())
+                            <li><a href="{{ route('login') }}">Войти</a></li>
+                            <li><a href="{{ route('register') }}">Регистрация</a></li>
+                        @else
+							@if (Auth::user()->hasRole('affiliate') and Auth::user()->Profile->manager)
+								@if (\App\User::find(Auth::user()->Profile->manager)->Profile->avatar)
+									<div class="manager_block" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<span class='left_manager_popover'>Ваш менеджер:</span><span class='right_manager_popover'>{{\App\User::find(Auth::user()->Profile->manager)->Profile->name}}</span><hr class='manager_hr'><span class='left_manager_popover'>Skype:</span><span class='right_manager_popover'><a href='skype:{{\App\User::find(Auth::user()->Profile->manager)->Profile->skype}}?chat'>{{\App\User::find(Auth::user()->Profile->manager)->Profile->skype}}</a></span><hr class='manager_hr'><span class='left_manager_popover'>Email:</span><span class='right_manager_popover'><a href='mailto:{{\App\User::find(Auth::user()->Profile->manager)->Profile->email}}'>{{\App\User::find(Auth::user()->Profile->manager)->Profile->email}}</a></span>">
+										@if (strtotime(date('Y-m-d h:i:s'))<strtotime(\App\User::find(Auth::user()->Profile->manager)->updated_at)+900)
+											<span data-toggle="tooltip" data-placement="bottom" title="Ваш менеджер online" class="green_manager"></span>
+										@else
+											<span data-toggle="tooltip" data-placement="bottom" title="Ваш менеджер offline" class="red_manager"></span>
+										@endif
+										<img class="manager_icon" src="/images/avatars/{{\App\User::find(Auth::user()->Profile->manager)->Profile->avatar}}">
+									</div>
+								@else
+									<div class="manager_block" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<span class='left_manager_popover'>Ваш менеджер:</span><span class='right_manager_popover'>{{\App\User::find(Auth::user()->Profile->manager)->Profile->name}}</span><hr class='manager_hr'><span class='left_manager_popover'>Skype:</span><span class='right_manager_popover'><a href='skype:{{\App\User::find(Auth::user()->Profile->manager)->Profile->skype}}?chat'>{{\App\User::find(Auth::user()->Profile->manager)->Profile->skype}}</a></span><hr class='manager_hr'><span class='left_manager_popover'>Email:</span><span class='right_manager_popover'><a href='mailto:{{\App\User::find(Auth::user()->Profile->manager)->Profile->email}}'>{{\App\User::find(Auth::user()->Profile->manager)->Profile->email}}</a></span>">
+										@if (strtotime(date('Y-m-d h:i:s'))<strtotime(\App\User::find(Auth::user()->Profile->manager)->updated_at)+900)
+											<span data-toggle="tooltip" data-placement="bottom" title="Ваш менеджер online" class="green_manager"></span>
+										@else
+											<span data-toggle="tooltip" data-placement="bottom" title="Ваш менеджер offline" class="red_manager"></span>
+										@endif
+										<img class="manager_icon" src="/images/cabinet/no_foto.png">
+									</div>
+								@endif
+								
+							@endif
+                            
+                        @endif
+                    </ul>
+                </div>
+            </div>
+        </nav>

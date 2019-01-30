@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<payments xmlns="http://tempuri.org/ds.xsd">
+            <payment><Destination>R398103157282</Destination><Amount>1964.6</Amount><Description>Перевод по заявке id - 92</Description><Id>92</Id></payment><payment><Destination>R251963830598</Destination><Amount>16766.78</Amount><Description>Перевод по заявке id - 93</Description><Id>93</Id></payment><payment><Destination>R326818658158</Destination><Amount>2900</Amount><Description>Перевод по заявке id - 60</Description><Id>60</Id></payment></payments>

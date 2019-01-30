@@ -1,0 +1,19 @@
+{
+    "version": "dev-master",
+    "name": "mplacegit/myproducts",
+    "description": "test",
+    "license": "MIT",
+	 "authors": [
+        {
+            "name": "sargamor",
+            "email": "preduvedomlenie@gmail.com"
+        }
+    ],
+    "autoload": {
+          "psr-4": {
+		  "Mplacegit\\Myproducts\\": "./"
+           }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}

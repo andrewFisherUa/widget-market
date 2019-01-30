@@ -1,0 +1,222 @@
+@font-face {
+	font-family: "OpenSansRegular";
+	src: url("/fonts/OpenSans/OpenSansRegular/OpenSansRegular.eot");
+	src: url("/fonts/OpenSans/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+	url("/fonts/OpenSans/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+	url("/fonts/OpenSans/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansLight";
+	src: url("/fonts/OpenSans/OpenSansLight/OpenSansLight.eot");
+	src: url("/fonts/OpenSans/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+	url("/fonts/OpenSans/OpenSansLight/OpenSansLight.woff") format("woff"),
+	url("/fonts/OpenSans/OpenSansLight/OpenSansLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansItalic";
+	src: url("/fonts/OpenSans/OpenSansItalic/OpenSansItalic.eot");
+	src: url("/fonts/OpenSans/OpenSansItalic/OpenSansItalic.eot?#iefix")format("embedded-opentype"),
+	url("/fonts/OpenSans/OpenSansItalic/OpenSansItalic.woff") format("woff"),
+	url("/fonts/OpenSans/OpenSansItalic/OpenSansItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansBold";
+	src: url("/fonts/OpenSans/OpenSansBold/OpenSansBold.eot");
+	src: url("/fonts/OpenSans/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+	url("/fonts/OpenSans/OpenSansBold/OpenSansBold.woff") format("woff"),
+	url("/fonts/OpenSans/OpenSansBold/OpenSansBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansExtraBold";
+	src: url("/fonts/OpenSans/OpenSansExtraBold/OpenSansExtraBold.eot");
+	src: url("/fonts/OpenSans/OpenSansExtraBold/OpenSansExtraBold.eot?#iefix")format("embedded-opentype"),
+	url("/fonts/OpenSans/OpenSansExtraBold/OpenSansExtraBold.woff") format("woff"),
+	url("/fonts/OpenSans/OpenSansExtraBold/OpenSansExtraBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansExtraBoldItalic";
+	src: url("/fonts/OpenSans/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.eot");
+	src: url("/fonts/OpenSans/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.eot?#iefix")format("embedded-opentype"),
+	url("/fonts/OpenSans/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.woff") format("woff"),
+	url("/fonts/OpenSans/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansBoldItalic";
+	src: url("/fonts/OpenSans/OpenSansBoldItalic/OpenSansBoldItalic.eot");
+	src: url("/fonts/OpenSans/OpenSansBoldItalic/OpenSansBoldItalic.eot?#iefix")format("embedded-opentype"),
+	url("/fonts/OpenSans/OpenSansBoldItalic/OpenSansBoldItalic.woff") format("woff"),
+	url("/fonts/OpenSans/OpenSansBoldItalic/OpenSansBoldItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansRegularItalic";
+	src: url("/fonts/OpenSans/OpenSansRegularItalic/OpenSansRegularItalic.eot");
+	src: url("/fonts/OpenSans/OpenSansRegularItalic/OpenSansRegularItalic.eot?#iefix")format("embedded-opentype"),
+	url("/fonts/OpenSans/OpenSansRegularItalic/OpenSansRegularItalic.woff") format("woff"),
+	url("/fonts/OpenSans/OpenSansRegularItalic/OpenSansRegularItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansSemiBold";
+	src: url("/fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold.eot");
+	src: url("/fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix")format("embedded-opentype"),
+	url("/fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"),
+	url("/fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansSemiBoldItalic";
+	src: url("/fonts/OpenSans/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.eot");
+	src: url("/fonts/OpenSans/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.eot?#iefix")format("embedded-opentype"),
+	url("/fonts/OpenSans/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.woff") format("woff"),
+	url("/fonts/OpenSans/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+body{
+font-family: "OpenSansRegular";
+min-width: 1200px;
+}
+.glav_href{
+display: block;
+margin: 10px 0 5px 0;
+}
+.glav_href:hover, .glav_href:focus, .glav_href:active{
+text-decoration: none;
+}
+.mp_logo{
+display: block;
+    background: url("../images/mp_logo.png") center center no-repeat transparent;
+    background-repeat: no-repeat, no-repeat;
+    -moz-background-size: 0 0, contain;
+    background-size: contain, 0 0;
+    width: 173px;
+    height: 29px;
+    display: block;
+    text-align: center;
+}
+.mp_slog{
+	font-size: 11px;
+    color: #3b4371;
+    letter-spacing: 1.1px;
+    display: block;
+    font-family: "OpenSansBold";
+    text-align: center;
+}
+.manager_icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #8c8c8c;
+    display: block;
+    margin-top: 13px;
+}
+.custom-nav{
+float: right;
+cursor: pointer;
+}
+.left_manager_popover{
+width: 100px;
+display: inline-block;
+font-size: 12px;
+clear: left;
+font-weight: bolder;
+}
+.right_manager_popover{
+width: 100px;
+display: inline-block;
+font-size: 12px;
+word-wrap: break-word;
+}
+.popover-content{
+padding: 5px!important;
+}
+.popover{
+width: 215px!important;
+}
+.manager_hr{
+border: 0;
+    border-top: 1px solid #8c8c8c;
+    border-top-style: dashed;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+.manager_block{
+position: relative;
+}
+.green_manager{
+display: block;
+    width: 20px;
+    height: 20px;
+    background: rgba(29, 193, 29, 1);
+    border-radius: 20px;
+    position: absolute;
+    top: 0px;
+    left: -7px;
+    -webkit-box-shadow: 0px 0px 30px 10px rgba(0,194,13,0.7);
+    -moz-box-shadow: 0px 0px 30px 10px rgba(0,194,13,0.7);
+    box-shadow: 0px 0px 10px 3px rgba(0, 194, 13, 0.7);
+}
+.red_manager{
+	display: block;
+    width: 20px;
+    height: 20px;
+    background: rgba(193, 29, 29, 1);
+    border-radius: 20px;
+    position: absolute;
+    top: 0px;
+    left: -7px;
+    -webkit-box-shadow: 0px 0px 30px 10px rgba(194,0,0,0.7);
+    -moz-box-shadow: 0px 0px 30px 10px rgba(194,0,0,0.7);
+    box-shadow: 0px 0px 10px 3px rgba(194, 0, 0, 0.7);
+}
+.home_avatar_block{
+	position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+}
+.home_avatar_green{
+	display: block;
+    width: 20px;
+    height: 20px;
+    background: rgba(29, 193, 29, 1);
+    border-radius: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -webkit-box-shadow: 0px 0px 30px 10px rgba(0,194,13,0.7);
+    -moz-box-shadow: 0px 0px 30px 10px rgba(0,194,13,0.7);
+    box-shadow: 0px 0px 10px 3px rgba(0, 194, 13, 0.7);
+	cursor: pointer;
+}
+.home_avatar_red{
+	display: block;
+    width: 20px;
+    height: 20px;
+    background: rgba(193, 29, 29, 1);
+    border-radius: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -webkit-box-shadow: 0px 0px 30px 10px rgba(194,0,0,0.7);
+    -moz-box-shadow: 0px 0px 30px 10px rgba(194,0,0,0.7);
+    box-shadow: 0px 0px 10px 3px rgba(194, 0, 0, 0.7);
+	cursor: pointer;
+}

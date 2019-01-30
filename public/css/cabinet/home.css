@@ -1,0 +1,207 @@
+.affiliate_cabinet_block{
+border: 1px solid #cacaca;
+background-image: url(/images/cabinet/background_block.png);
+background-color: rgba(199, 199, 199, 0.5);
+height: 290px;
+box-shadow: 0 6px 12px rgba(0,0,0,.175);
+-webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+-moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.affiliate_cabinet_block > .heading{
+font-size: 11px;
+text-transform: uppercase;
+margin: 8px;
+padding: 0;
+height: 14px;
+}
+.affilaite_hr{
+border: 0;
+border-top: 1px solid #8c8c8c;
+border-top-style: dashed;
+margin-top: 3px;
+margin-bottom: 0;
+}
+.gliph_affiliate{
+color: #3097D1;
+font-size: 22px;
+transition: 0.2s;
+margin: 0 5px;
+}
+.gliph_affiliate:hover{
+color: #2579a9;
+transition: 0.2s;
+}
+.cabinet_avatar{
+width: 80px;
+height: 80px;
+border: 1px solid #8c8c8c;
+background: #f5f8fa;
+display: block;
+margin: 0 auto;
+margin-top: 40px;
+}
+.affiliate_name{
+font-size: 20px;
+overflow: hidden;
+white-space: pre;
+text-overflow: ellipsis;
+}
+.affiliate_email{
+font-size: 14px;
+color: #954120;
+overflow: hidden;
+white-space: pre;
+text-overflow: ellipsis;
+}
+.cabinet_gliph{
+margin-top: 10px;
+}
+.affiliate_role{
+font-size: 14px;
+font-weight: 700;
+}
+.affiliate_manager{
+font-size: 16px;
+font-weight: 700;
+height: 25px;
+margin-top: 5px;
+}
+.manager_avatar{
+width: 80px;
+height: 80px;
+border: 1px solid #8c8c8c;
+background: #f5f8fa;
+display: block;
+margin: 0 auto;
+margin-top: 10px;
+}
+.no_manager{
+font-size: 14px;
+padding: 0 15px;
+margin-top: 20px;
+}
+.affiliate_balance{
+font-size: 40px;
+font-weight: 700;
+line-height: 1.4;
+}
+.affiliate_detal_balance{
+padding: 0 20px;
+border-bottom: 1px dashed #8c8c8c;
+font-size: 16px;
+clear: both;
+}
+.affiliate_detal_balance:last-child{
+border-bottom: 0;
+}
+.affiliate_detal_balance .right{
+	float: right;
+}
+.green{
+color: #20895e;
+}
+.affiliate_add_domain{
+float: right;
+color: #20895e;
+font-size: 21px;
+line-height: 14px;
+transition: 0.2s;
+margin-top: -4px;
+}
+.affiliate_add_domain:hover, .affiliate_add_domain:active{
+color: #18714d;
+transition: 0.2s;
+}
+.affiliate_add_domain:focus{
+outline: none;
+color: #20895e;
+}
+.affiliate_pad{
+font-size: 14px;
+padding: 4px 10px;
+border-bottom: 1px dashed #8c8c8c;
+}
+.affiliate_pad:last-child{
+border: 0;
+}
+.affiliate_all_pads_domain{
+width: 120px;
+overflow: hidden;
+text-overflow: ellipsis;
+display: inline-block;
+padding-top: 5px;
+height: 27px;
+word-break: break-all;
+}
+.affiliate_all_pads_domain_gliph{
+font-size: 21px;
+top: -1px;
+margin: 0 5px;
+}
+.blue{
+color: #3097D1;
+}
+.red{
+color: #bf5329
+}
+.green{
+color: #20895e;
+}
+.pads_config{
+float: right;
+top: 5px;
+margin: 0;
+}
+#affiliate_all_pads{
+    height: 257px;
+	overflow: hidden;
+}
+#cabinet_news{
+    height: 247px;
+	overflow: hidden;
+}
+.home_news{
+	position: relative;
+	}
+.home_news:hover, .home_news:focus, .home_news:active{
+	text-decoration: none;
+}
+.home_news:hover .gliph_affiliate{
+	color: #2579a9;
+	transition: 0.2s;
+}
+.home_news:hover .count_news{
+	background: rgb(181, 0, 0);
+	transition: 0.2s;
+}
+.count_news{
+	position: absolute;
+	top: -15px;
+	right: 0;
+	background: rgb(220, 0, 0);
+	height: 20px;
+	width: 20px;
+	border-radius: 40px;
+	line-height: 20px;
+	color: #fff;
+	font-size: 12px;
+	transition: 0.2s;
+}
+.get_code{
+font-weight: bold;
+}
+.get_code:hover, .get_code:focus, .get_code:active{
+    text-decoration: none!important;
+}
+.widget-table{
+margin-bottom: 0px!important;
+}
+.widget-table > thead > tr > th, .widget-table > thead > tr > td, .widget-table > tbody > tr > th, .widget-table > tbody > tr > td, .widget-table > tfoot > tr > th, .widget-table > tfoot > tr > td{
+vertical-align: middle!important;
+}
+.widget-gl{
+top: 3px;
+}
+.widget-table-header td{
+font-weight: bold;
+}

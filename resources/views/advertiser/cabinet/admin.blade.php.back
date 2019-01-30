@@ -1,0 +1,16 @@
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
+<a  href="{{ route('advert_setting.default_product') }}" >Общие расценки</a> | <a  href="{{ route('advertiser.sinonim') }}" >Синонимы</a>
+
+@if(isset($admin))
+@widget('UserCompanies',["user"=>$user,"admin"=>1])
+@else
+@widget('UserCompanies',["user"=>$user])
+@endif;
+@endsection
+@push('cabinet_home')
+	<link href="{{ asset('css/cabinet/home.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/rouble.css') }}" rel="stylesheet">
+@endpush
